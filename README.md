@@ -55,11 +55,11 @@ This is a learning and portfolio project. Possible future improvements include a
 
 ### Loading state
 
-![Loading state](screenshots/loading-state.png)
+![Loading state](<img src="screenshots/loading-state.png" alt="Loading state" width="300">)
 
 ### Product list
 
-![Product list](screenshots/product-list.png)
+![Product list](<img src="screenshots/product-list.png" alt="Product list" width="300">)
 
 ## Author
 
