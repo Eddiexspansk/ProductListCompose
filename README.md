@@ -53,13 +53,11 @@ This is a learning and portfolio project. Possible future improvements include a
 
 ## Screenshots
 
-### Loading state
-
-![Loading state](<img src="screenshots/loading-state.png" alt="Loading state" width="300">)
-
-### Product list
-
-![Product list](<img src="screenshots/product-list.png" alt="Product list" width="300">)
+<p align="center">
+  <img src="screenshots/loading-state.png" alt="Loading state" width="280">
+  &nbsp;&nbsp;
+  <img src="screenshots/product-list.png" alt="Product list" width="280">
+</p>
 
 ## Author
 
