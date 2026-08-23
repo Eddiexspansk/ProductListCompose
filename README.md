@@ -51,6 +51,16 @@ No API keys, external services, or additional configuration are required.
 
 This is a learning and portfolio project. Possible future improvements include adding navigation, persistent local storage, automated ViewModel tests, dependency injection, and a more detailed product interface.
 
+## Screenshots
+
+### Loading state
+
+![Loading state](Screenshot_20260823_202954.png)
+
+### Product list
+
+![Product list](screenshots/product-list.png)
+
 ## Author
 
 Eduardo Pinto
