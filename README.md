@@ -59,7 +59,7 @@ This is a learning and portfolio project. Possible future improvements include a
 
 ### Product list
 
-![Product list](screenshots/product-list.png)
+![Product list](product-list.png)
 
 ## Author
 
