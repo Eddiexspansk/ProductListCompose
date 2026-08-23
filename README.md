@@ -55,7 +55,7 @@ This is a learning and portfolio project. Possible future improvements include a
 
 ### Loading state
 
-![Loading state](Screenshot_20260823_202954.png)
+![Loading state](loading-state.png)
 
 ### Product list
 
