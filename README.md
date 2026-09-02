@@ -1,57 +1,79 @@
 # Product List Compose
 
-A small Android portfolio project built with Kotlin and Jetpack Compose. The app simulates loading a list of products and demonstrates a clear separation between the UI, state holder, repository, and data model.
+A modern Android portfolio project built with **Kotlin** and **Jetpack Compose**. This project serves as a showcase of my journey learning Android development, from basic concepts to advanced API integrations and UI polishing.
 
-## Features
+---
 
-- Displays a product list in a Compose UI
-- Shows a progress indicator while data is loading
-- Represents loading, success, and error UI states
-- Reloads the product list from a button
-- Simulates asynchronous work with Kotlin coroutines
-- Keeps screen state in a `ViewModel` using `StateFlow`
+## 📅 Version History & Milestones
 
-## Tech stack
+### v2.0 - Networking & Professional UX (Current)
+*The app evolved from a static prototype to a dynamic, connected application.*
 
-- Kotlin
-- Jetpack Compose
-- Material 3
-- Android ViewModel
-- Kotlin Coroutines
-- StateFlow
-- Gradle version catalog
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1725307932857" alt="Main Screen" width="280">
+  &nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/1725307932903" alt="Empty State" width="280">
+  &nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/1725307932924" alt="Filter Menu" width="280">
+</p>
 
-## Architecture
+- **API Integration:** Replaced simulated data with real-time fetching from the **FakeStore API** using **Retrofit** and **GSON**.
+- **Dynamic Filtering:** Implemented a category-based filter system using Material 3 `DropdownMenu`.
+- **Image Loading:** Integrated **Coil** for efficient and smooth remote image rendering.
+- **Visual Polish:** Added full **Edge-to-Edge** support (`statusBarsPadding`, `navigationBarsPadding`) and refined the Material 3 styling for both light and dark modes.
+- **Robust Error Handling:** Improved state management to handle network timeouts and API errors gracefully.
 
-The project uses a simple MVVM-style structure:
+### v1.0 - Initial Prototype & Architecture
+*The foundation of the project.*
+
+- **Architecture Setup:** Established a clean **MVVM** pattern separating data, logic, and UI.
+- **State Management:** Implemented `ViewModel` and `StateFlow` to manage the UI state reactively.
+- **Simulated Asynchrony:** Used Kotlin Coroutines and `delay` to simulate network calls and test UI states (Loading, Success, Error).
+- **Basic UI:** Created the first product list using `LazyColumn` and basic Material 3 cards.
+
+---
+
+## 🚀 Features
+
+- **Dynamic Data:** Real-time product fetching from a REST API.
+- **Category Filter:** Quick filtering to browse specific types of products.
+- **Immersive UI:** A modern design that respects the system's status and navigation bars.
+- **Responsive State:** Instant visual feedback for loading, success, and error scenarios.
+- **Clean Code:** Adherence to modern Android architectural best practices.
+
+## 🛠️ Tech Stack
+
+- **Kotlin** & **Coroutines**
+- **Jetpack Compose** (UI)
+- **Material 3** (Design)
+- **Retrofit** & **GSON** (Networking)
+- **Coil** (Images)
+- **ViewModel** & **StateFlow** (State)
+- **Gradle Version Catalog** (Dependencies)
+
+## 🏗️ Architecture
 
 ```text
 data/
-├── model/Producto.kt
-└── repository/ProductosRepository.kt
+├── model/           # Data classes
+├── remote/          # Retrofit API interface & client
+└── repository/      # Data source abstraction
 
-ui/productos/
-├── ProductosScreen.kt
-├── ProductosUiState.kt
-└── ProductosViewModel.kt
+ui/productos/        # UI layer (Screen, ViewModel, UI State)
 ```
 
-`ProductosRepository` provides the sample data, `ProductosViewModel` coordinates asynchronous loading and exposes an immutable UI state, and `ProductosScreen` renders the current state.
-
-## Running the project
+## 🏃 Running the project
 
 1. Clone the repository.
 2. Open it in Android Studio.
-3. Allow Gradle to synchronize the dependencies.
-4. Run the `app` configuration on an emulator or Android device running Android 9 (API 28) or later.
+3. Allow Gradle to synchronize dependencies.
+4. Run the `app` configuration (requires internet access).
 
-No API keys, external services, or additional configuration are required.
+## 📌 Project Status
 
-## Project status
+Continuously evolving. Future steps include Dependency Injection (Hilt), Unit Testing, and Room persistence.
 
-This is a learning and portfolio project. Possible future improvements include adding navigation, persistent local storage, automated ViewModel tests, dependency injection, and a more detailed product interface.
-
-## Screenshots
+## 📸 Screenshots (Original Version)
 
 <p align="center">
   <img src="screenshots/loading-state.png" alt="Loading state" width="280">
@@ -59,7 +81,6 @@ This is a learning and portfolio project. Possible future improvements include a
   <img src="screenshots/product-list.png" alt="Product list" width="280">
 </p>
 
-## Author
+## 👤 Author
 
 Eduardo Pinto
-
