@@ -10,11 +10,10 @@ A modern Android portfolio project built with **Kotlin** and **Jetpack Compose**
 *The app evolved from a static prototype to a dynamic, connected application.*
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1725307932857" alt="Main Screen" width="280">
+  <img src="screenshots/Product_list_Dropdownmenu2v0.png" alt="DropDownMenu" width="280">
   &nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/1725307932903" alt="Empty State" width="280">
+  <img src="screenshots/Product_list_2v0.png" alt="Loading state" width="280">
   &nbsp;&nbsp;
-  <img src="https://github.com/user-attachments/assets/1725307932924" alt="Filter Menu" width="280">
 </p>
 
 - **API Integration:** Replaced simulated data with real-time fetching from the **FakeStore API** using **Retrofit** and **GSON**.
@@ -75,10 +74,10 @@ Continuously evolving. Future steps include Dependency Injection (Hilt), Unit Te
 
 ## 📸 Screenshots (Original Version)
 
-<p align="center">
-  <img src="screenshots/loading-state.png" alt="Loading state" width="280">
+<p align='center'>
+  <img src='screenshots/loading-state.png' alt='Loading state' width='280'>
   &nbsp;&nbsp;
-  <img src="screenshots/product-list.png" alt="Product list" width="280">
+  <img src='screenshots/product-list.png' alt='Product list' width='280'>
 </p>
 
 ## 👤 Author
