@@ -7,6 +7,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import android.util.Log
 
 class ProductosViewModel : ViewModel() {
     private val repository = ProductosRepository()
@@ -25,10 +26,12 @@ class ProductosViewModel : ViewModel() {
                     cargando = false,
                     productos = nuevosProductos,
                 )
-            } catch (_: Exception) {
+            } catch (e: Exception) {
+                Log.e("ProductosViewModel", "Error al cargar productos", e)
+
                 _uiState.value = _uiState.value.copy(
                     cargando = false,
-                    error = "Unable to load products",
+                    error = e.message ?: "Unknow Error",
                 )
             }
         }
